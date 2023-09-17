@@ -30,7 +30,8 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 4.2)
+## find_package(OpenCV 4.2)
+find_package(OpenCV 4.6)
 if(NOT OpenCV_FOUND)
   message(FATAL_ERROR "OpenCV 4.2 not found.")
 endif()
